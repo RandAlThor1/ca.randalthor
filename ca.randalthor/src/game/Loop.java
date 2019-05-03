@@ -56,13 +56,22 @@ public class Loop implements Runnable {
             long now = System.nanoTime();
             delta += (now - lastTime) / ns;
             lastTime = now;
-            while (delta >= 1) {
-                loops++;
-                delta--;
+            if (loopsPerSecond == 0) {
                 for (int i = 0; i < acts.size(); i++) {
                     acts.get(i).run();
                 }
+                loops++;
             }
+            while (delta >= 1) {
+                delta--;
+                if (loopsPerSecond != 0) {
+                    loops++;
+                    for (int i = 0; i < acts.size(); i++) {
+                        acts.get(i).run();
+                    }
+                }
+            }
+
             if (System.currentTimeMillis() - timer > 1000) {
                 timer += 1000;
                 loopsLastSecond = loops;

@@ -3,8 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Benjamin/Desktop/ca.randalthor/src/renderer/PixelRenderer.java</file>
-            <file>file:/C:/Users/Benjamin/Desktop/ca.randalthor/src/renderer/Screen.java</file>
+            <file>file:/C:/Users/Benjamin/Desktop/ca.randalthor/ca.randalthor/ca.randalthor/src/renderer/ScreenCanvas.java</file>
+            <file>file:/C:/Users/Benjamin/Desktop/ca.randalthor/ca.randalthor/ca.randalthor/src/tile/Map.java</file>
+            <file>file:/C:/Users/Benjamin/Desktop/ca.randalthor/ca.randalthor/ca.randalthor/src/tile/Tile.java</file>
+            <file>file:/C:/Users/Benjamin/Desktop/ca.randalthor/ca.randalthor/ca.randalthor/src/renderer/Screen.java</file>
+            <file>file:/C:/Users/Benjamin/Desktop/ca.randalthor/ca.randalthor/ca.randalthor/src/renderer/PixelRenderer.java</file>
+            <file>file:/C:/Users/Benjamin/Desktop/ca.randalthor/ca.randalthor/ca.randalthor/src/game/Loop.java</file>
+            <file>file:/C:/Users/Benjamin/Desktop/ca.randalthor/ca.randalthor/ca.randalthor/src/game/Activity.java</file>
         </group>
     </open-files>
 </project-private>

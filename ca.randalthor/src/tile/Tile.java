@@ -3,20 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package renderer;
-
-import java.awt.Canvas;
-import java.awt.Dimension;
+package tile;
 
 /**
  *
  * @author Benjamin
  */
-class ScreenCanvas extends Canvas{
+public class Tile {
+    //temp
+    int color;
 
-    public ScreenCanvas(Dimension size) {
-        this.setPreferredSize(size);
-        this.requestFocus();
+    public Tile(int color) {
+        this.color = color;
     }
     
+    public int getColor(){
+        return this.color;
+    }
 }

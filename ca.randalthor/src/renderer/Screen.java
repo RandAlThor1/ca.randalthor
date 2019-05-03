@@ -6,6 +6,7 @@
 package renderer;
 
 import java.awt.Dimension;
+import java.awt.event.KeyListener;
 import javax.swing.JFrame;
 
 /**
@@ -16,11 +17,14 @@ public class Screen extends JFrame{
     final int height, width, scale;
     ScreenCanvas canvas;
 
-    public Screen(int height, int width, int scale, String title) {
+    public Screen(int height, int width, int scale, String title, KeyListener key) {
         this.height = height;
         this.width = width;
         this.scale = scale;
         canvas = new ScreenCanvas(new Dimension(width * scale, height * scale));
+        
+        //this.addKeyListener(key);
+        canvas.addKeyListener(key);
         
         this.setResizable(false);
         this.setTitle(title);
